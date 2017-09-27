@@ -1,0 +1,14 @@
+classes:
+- cluster.mcp-upgrade.openstack.compute
+parameters:
+  _param:
+    linux_system_codename: xenial
+    salt_master_host: 10.0.0.18
+    single_address: '10.0.1.129'
+    tenant_address: '10.0.2.129'
+  linux:
+    system:
+      name: cmp029
+      domain: mcp-upgrade.local
+      cluster: default
+      environment: prd

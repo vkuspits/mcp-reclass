@@ -1,0 +1,16 @@
+classes:
+- cluster.mcp-upgrade.openstack.control
+parameters:
+  _param:
+    keepalived_vip_priority: 102
+    linux_system_codename: xenial
+    opencontrail_database_id: 2
+    rabbitmq_cluster_role: slave
+    salt_master_host: 10.0.0.18
+    single_address: 10.0.1.12
+  linux:
+    system:
+      name: ctl02
+      domain: mcp-upgrade.local
+      cluster: default
+      environment: prd

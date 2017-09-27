@@ -1,0 +1,17 @@
+classes:
+- cluster.mcp-upgrade.infra.kvm
+parameters:
+  _param:
+    deploy_address: 10.0.0.12
+    keepalived_vip_priority: 100
+    linux_system_codename: xenial
+    public_address: 10.0.1.11
+    salt_master_host: 10.0.0.18
+    single_address: 10.0.1.11
+    storage_address: 10.0.1.11
+  linux:
+    system:
+      name: kvm01
+      domain: mcp-upgrade.local
+      cluster: default
+      environment: prd
